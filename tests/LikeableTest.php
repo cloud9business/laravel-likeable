@@ -1,11 +1,11 @@
 <?php
 
-use Conner\Tagging\Taggable;
-use Conner\Tagging\Tag;
-use Conner\Tagging\TaggingUtil;
+//use Conner\Tagging\Taggable;
+//use Conner\Tagging\Tag;
+//use Conner\Tagging\TaggingUtil;
 use Illuminate\Support\Facades\Config;
-use Conner\Tagging\Tests\TaggingStub;
-use Conner\Likeable\Tests\LikeableStub;
+//use Conner\Tagging\Tests\TaggingStub;
+use Cloud9Business\Likeable\Tests\LikeableStub;
 
 class TaggingTest extends \Orchestra\Testbench\TestCase {
 

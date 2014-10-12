@@ -1,7 +1,7 @@
-<?php namespace Conner\Likeable;
+<?php namespace Cloud9Business\Likeable;
 
 /**
- * Copyright (C) 2014 Robert Conner
+ * Copyright (C) 2014 Stephen Neander
  */
 
 trait LikeableTrait {
@@ -30,7 +30,7 @@ trait LikeableTrait {
 	 * Collection of the likes on this record
 	 */
 	public function likes() {
-		return $this->morphMany('\Conner\Likeable\Like', 'likable');
+		return $this->morphMany('\Cloud9Business\Likeable\Like', 'likable');
 	}
 
 	/**
@@ -38,7 +38,7 @@ trait LikeableTrait {
 	 * morphed record
 	 */
 	public function likeCounter() {
-		return $this->morphOne('\Conner\Likeable\LikeCounter', 'likable');
+		return $this->morphOne('\Cloud9Business\Likeable\LikeCounter', 'likable');
 	}
 	
 	/**

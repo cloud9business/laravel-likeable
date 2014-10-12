@@ -1,4 +1,4 @@
-<?php namespace Conner\Likeable\Tests;
+<?php namespace Cloud9Business\Likeable\Tests;
 
 use Conner\Likeable\LikeableTrait;
 use \Schema;

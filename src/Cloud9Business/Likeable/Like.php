@@ -1,4 +1,4 @@
-<?php namespace Conner\Likeable;
+<?php namespace Cloud9Business\Likeable;
 
 class Like extends \Eloquent {
 
