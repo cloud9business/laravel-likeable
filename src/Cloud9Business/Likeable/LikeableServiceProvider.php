@@ -1,4 +1,4 @@
-<?php namespace Cloud9Business\Likeable;
+<?php namespace Cloud9Business\EloquentlLikeable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,7 +24,7 @@ class LikeableServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->package('cloud9business/laravel-likeable');
+        $this->package('cloud9business/eloquent-likeable');
     }
 
     /**

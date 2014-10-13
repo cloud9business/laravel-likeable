@@ -5,7 +5,7 @@
 //use Conner\Tagging\TaggingUtil;
 use Illuminate\Support\Facades\Config;
 //use Conner\Tagging\Tests\TaggingStub;
-use Cloud9Business\Likeable\Tests\LikeableStub;
+use Cloud9Business\EloquentlLikeable\Tests\LikeableStub;
 
 class TaggingTest extends \Orchestra\Testbench\TestCase {
 
@@ -33,13 +33,13 @@ class TaggingTest extends \Orchestra\Testbench\TestCase {
 		
 		$artisan->call('migrate', array(
 			'--database' => 'testbench',
-			'--package'=>'rtconner\laravel-likeable',
+			'--package'=>'cloud9business\eloquent-likeable',
 			'--path'=>'migrations',
 		));
 
 		$artisan->call('migrate', array(
 			'--database' => 'testbench',
-			'--package'=>'rtconner\laravel-likeable',
+			'--package'=>'cloud9business\eloquent-likeable',
 			'--path'=>'../tests/migrations',
 		));
 		

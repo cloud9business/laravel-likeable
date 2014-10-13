@@ -1,4 +1,4 @@
-<?php namespace Cloud9Business\Likeable;
+<?php namespace Cloud9Business\EloquentlLikeable;
 
 /**
  * Copyright (C) 2014 Stephen Neander
@@ -30,7 +30,7 @@ trait LikeableTrait {
 	 * Collection of the likes on this record
 	 */
 	public function likes() {
-		return $this->morphMany('\Cloud9Business\Likeable\Like', 'likable');
+		return $this->morphMany('\Cloud9Business\EloquentlLikeable\Like', 'likable');
 	}
 
 	/**
@@ -38,7 +38,7 @@ trait LikeableTrait {
 	 * morphed record
 	 */
 	public function likeCounter() {
-		return $this->morphOne('\Cloud9Business\Likeable\LikeCounter', 'likable');
+		return $this->morphOne('\Cloud9Business\EloquentlLikeable\LikeCounter', 'likable');
 	}
 	
 	/**

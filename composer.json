@@ -1,8 +1,8 @@
 {
-	"name": "cloud9business/laravel-likeable",
+	"name": "cloud9business/eloquent-likeable",
 	"description": "Trait for Laravel Eloquent models to allow easy implementation of a 'like' or 'favorite' or 'remember' feature.",
 	"license": "MIT",
-	"homepage": "http://www.cloud9business.com/packages/laravel-likeable-favorite",
+	"homepage": "http://www.cloud9business.com/packages/eloquent-likeable-favorite",
 	"keywords": ["trait", "laravel", "eloquent", "likeable", "likable", "like", "remember", "follow", "favorite", "favourite"],
 	"authors": [
 		{
@@ -25,7 +25,7 @@
 			"src/migrations"
 		],
 		"psr-0": {
-			"cloud9business\\Likeable\\": "src/"
+			"cloud9business\\EloquentLikeable\\": "src/"
 		}
 	}
 }

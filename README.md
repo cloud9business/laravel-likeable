@@ -7,17 +7,17 @@ Trait for Laravel Eloquent models to allow easy implementation of a "like" or "f
 #### Composer Install
 
     "require": {
-        "cloud9business/laravel-likeable": "0.1.*"
+        "cloud9business/eloquent-likeable": "0.1.*"
     }
 
 #### Run the migrations
 
-	php artisan migrate --package=cloud9business/laravel-likeable
+	php artisan migrate --package=cloud9business/eloquent-likeable
 	
 #### Setup your models
 
     class Article extends \Eloquent {
-        use Cloud9Business\Likeable\LikeableTrait;
+        use Cloud9Business\EloquentlLikeable\LikeableTrait;
     }
 
 #### Sample Usage
@@ -42,7 +42,7 @@ Trait for Laravel Eloquent models to allow easy implementation of a "like" or "f
     
 ## Likeable Controller
 
-Also this package provides `\Cloud9Business\Likeable\LikeableController`, which handle requests to like entities
+Also this package provides `\Cloud9Business\EloquentlLikeable\LikeableController`, which handle requests to like entities
 
 ### Usage
 Add the service provider to `app/config/app.php`
@@ -51,17 +51,17 @@ Add the service provider to `app/config/app.php`
 'providers' => array(
     // providers...
     
-    'Cloud9Business\Likeable\LikeableServiceProvider',
+    'Cloud9Business\EloquentlLikeable\LikeableServiceProvider',
 )
 ```
 
 publish the config:
  
 ```bash
-php artisan config:publish cloud9business/likeable
+php artisan config:publish cloud9business/eloquent-likeable
 ```
 
-Add models you need to sort in the config `app/config/packages/cloud9business/likeable/config.php`:
+Add models you need to sort in the config `app/config/packages/cloud9business/eloquentl-likeable/config.php`:
 
 ```php
 'entities' => array(
@@ -72,7 +72,7 @@ Add models you need to sort in the config `app/config/packages/cloud9business/li
 Add route to the `like` method of the controller:
 
 ```php
-Route::post('like', '\Cloud9Business\Likeable\LikeableController@like'); 
+Route::post('like', '\Cloud9Business\EloquentlLikeable\LikeableController@like'); 
 ```
 
 Now if you post to this route valid data:

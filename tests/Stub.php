@@ -1,6 +1,6 @@
-<?php namespace Cloud9Business\Likeable\Tests;
+<?php namespace Cloud9Business\EloquentlLikeable\Tests;
 
-use Conner\Likeable\LikeableTrait;
+use Cloud9Business\EloquentlLikeable\LikeableTrait;
 use \Schema;
 use Illuminate\Database\Schema\Blueprint;
 
